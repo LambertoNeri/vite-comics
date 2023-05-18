@@ -84,10 +84,17 @@
                 </ul>
             </div>
 
-            <div class="background-dc"></div>
-         
+            <div class="background-dc">
+                <img src="../assets/img/dc-logo-bg.png" alt="">
+            </div>
         </div>
     </div>
+    <div class="background-gray">
+        <div class="conteinter-footer">
+
+        </div>
+    </div>
+         
 </template>
 
 
@@ -128,7 +135,7 @@
     .container-body{
         @include width-1100;
         display: flex;
-        gap: 5rem;
+        gap: 4rem;
         position: relative;
         z-index: 1000;
     }
@@ -139,9 +146,6 @@
             margin-top: 0.4rem;
             }
     }
-
-    
-
     .little{
         font-size: 0.8rem;
     }
@@ -154,7 +158,7 @@
         opacity: 50%;
     }
 
-    .background-dc{
+  /*  .background-dc{
         background-image: url(../assets/img/dc-logo-bg.png);
         justify-self: end;
         height: 564px;
@@ -164,8 +168,27 @@
         z-index: 100;
         top: -200px;
         right: 0;  
-           
+    } */
+
+    .background-dc{
+        width: 785px;
+        height: 370px;
+        overflow: hidden;
        
+        img{
+            width: auto;
+            position: relative;
+            top: -120px;
+            right: -73px;
+        }
+
+    
+    }
+
+
+    .background-gray{
+        background-color: #303030;
+        height: 160px;
     }
 
 

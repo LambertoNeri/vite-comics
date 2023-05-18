@@ -31,7 +31,6 @@
 <style lang="scss">
 .background{
     position: relative;
-    z-index: 1000;
 }
         
 </style>
