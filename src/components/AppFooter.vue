@@ -90,8 +90,16 @@
         </div>
     </div>
     <div class="background-gray">
-        <div class="conteinter-footer">
-
+        <div class="container-footer">
+            <button>SIGN-UP NOW!</button>
+            <div class="follow-us">
+                <span>FOLLOW US</span>
+                <img src="./../assets/img/footer-facebook.png" alt="">
+                <img src="./../assets/img/footer-twitter.png" alt="">
+                <img src="./../assets/img/footer-youtube.png" alt="">
+                <img src="./../assets/img/footer-pinterest.png" alt="">
+                <img src="./../assets/img/footer-periscope.png" alt="">
+            </div>
         </div>
     </div>
          
@@ -153,12 +161,9 @@
     .moar{
         margin-top: 1rem;
     }
-
     .opacity-50{
         opacity: 50%;
     }
-
- 
     .background-dc{
         width: 785px;
         height: 370px;
@@ -170,14 +175,34 @@
             top: -120px;
             right: -73px;
         }
-
-    
     }
-
-
     .background-gray{
         background-color: #303030;
-        height: 160px;
+        height: 109px;
+        color: white;
+        .container-footer{
+            @include width-1100-noheight;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+                background-color: #303030;
+                border: 2px solid #0282F9;
+                color: white;
+                padding-inline: 1.5rem;
+                padding-top: 0.75rem;
+                padding-bottom: 0.75rem;
+                font-size: 1.2rem;
+            }
+            .follow-us{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem;
+                color: #0271C1;
+            }
+        }
     }
 
 
