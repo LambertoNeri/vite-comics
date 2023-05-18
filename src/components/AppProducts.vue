@@ -16,19 +16,22 @@
 
 
 <style lang="scss" scoped>
-    
+@use './../assets/styles/partials/variables.scss' as *;  
     .background{
         background-color: black;
     }
     .container{
-        height: 150px;
-        
+        @include width-1100;
         color: white;
         display: flex;
         align-items: center;
-        max-width: 1100px;
-        margin-inline: auto;
     }
+</style>
 
-
+<style lang="scss">
+.background{
+    position: relative;
+    z-index: 1000;
+}
+        
 </style>

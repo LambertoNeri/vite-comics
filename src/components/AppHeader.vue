@@ -27,12 +27,11 @@
 
 
 <style lang="scss" scoped>
+    @use './../assets/styles/partials/variables.scss' as *;
     header{
-        max-width: 1100px;
-        margin-inline: auto;
+        @include width-1100;
         display: flex;
         justify-content: space-between;
-        height: 150px;
         align-items: center;
     }
 
