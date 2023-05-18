@@ -158,18 +158,7 @@
         opacity: 50%;
     }
 
-  /*  .background-dc{
-        background-image: url(../assets/img/dc-logo-bg.png);
-        justify-self: end;
-        height: 564px;
-        width: 570px;
-        background-repeat: no-repeat;
-        position: absolute;   
-        z-index: 100;
-        top: -200px;
-        right: 0;  
-    } */
-
+ 
     .background-dc{
         width: 785px;
         height: 370px;
