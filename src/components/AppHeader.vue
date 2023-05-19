@@ -1,6 +1,46 @@
 <script>
+    import AppNav from './AppNav.vue';
     export default {
-        
+        components: {
+            AppNav,
+        },
+
+        data() {
+            return {
+                arrNav: [
+                    {
+                        'object': "CHARACTERS",
+                    },
+                    {
+                        'object': "COMICS",
+                    },
+                    {
+                        'object': "MOVIES",
+                    },
+                    {
+                        'object': "TV",
+                    },
+                    {
+                        'object': "GAMES",
+                    },
+                    {
+                        'object': "COLLECTIBLES",
+                    },
+                    {
+                        'object': "VIDEOS",
+                    },
+                    {
+                        'object': "FANS",
+                    },
+                    {
+                        'object': "NEWS",
+                    },
+                    {
+                        'object': "SHOP",
+                    },
+                ]
+            }
+        }
     }
 </script>
 
@@ -10,16 +50,12 @@
             <img src="../assets/img/dc-logo.png" alt="">
         </div>
         <div class="nav-bar">
-            <div class="characters">CHARACTERS</div>
-            <div class="comics">COMICS</div>
-            <div class="movies">MOVIES</div>
-            <div class="tv">TV</div>
-            <div class="games">GAMES</div>
-            <div class="collectibles">COLLECTIBLES</div>
-            <div class="videos">VIDEOS</div>
-            <div class="fans">FANS</div>
-            <div class="news">NEWS</div>
-            <div class="shop">SHOP</div>
+            <AppNav
+                v-for="(nav, i) in arrNav"
+                :key="i"
+                :navObject="nav.object"
+            />
+            
         </div>
     </header>
 </template>
@@ -45,7 +81,11 @@
         gap: 1.2rem;
         font-size: 0.8rem;
         font-weight: 900;
+        
+       
     }
+
+       
 
 
 

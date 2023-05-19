@@ -14,7 +14,7 @@
             <div class="magazine-pic">
                 <img :src=" /*arrMagazines[0].thumb*/ urlImg " alt="">
             </div>
-            <div class="magazine-series"> {{ /*arrMagazines[0].series.toUpperCase()*/ titolo }} </div>
+            <div class="magazine-series"> {{ /*arrMagazines[0].series.toUpperCase()*/ titolo.toUpperCase() }} </div>
     </div>
 </template>
 

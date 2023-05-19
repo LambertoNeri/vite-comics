@@ -97,7 +97,8 @@
                 :titolo="magazine.series"
             />
 
-            <button>CURRENT SERIES</button>
+            <button class="current-series">CURRENT SERIES</button>
+            <button class="load-more">LOAD MORE</button>
 
         </div>
     </div>
@@ -127,7 +128,7 @@
             flex-wrap: wrap;
             gap: 3rem;
             position: relative;
-            button{
+            .current-series{
                 color: white;
                 padding-inline: 1.5rem;
                 padding-top: .75rem;
@@ -138,6 +139,18 @@
                 position: absolute;
                 top: -1.5rem;
                 left: -1rem;
+            }
+            .load-more{
+                color: white;
+                padding-inline: 1.5rem;
+                padding-top: .75rem;
+                padding-bottom: .75rem;
+                background-color: #0282F9;
+                border: none;
+                font-size: 1.4rem;
+                position: absolute;
+                bottom: -25%;
+                left: 40%;
             }
         }
 
