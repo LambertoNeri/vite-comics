@@ -29,10 +29,14 @@
 <style lang="scss" scoped>
     @use './../assets/styles/partials/variables.scss' as *;
     header{
-        @include width-1100;
+        @include width-1100-noheight;
+        height: 120px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        img{
+            width: 80%;
+        }
     }
 
     .nav-bar{
@@ -40,5 +44,7 @@
         align-items: center;
         gap: 1rem;
     }
+
+
 
 </style>    
