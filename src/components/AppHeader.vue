@@ -42,7 +42,9 @@
     .nav-bar{
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 1.2rem;
+        font-size: 0.8rem;
+        font-weight: 900;
     }
 
 

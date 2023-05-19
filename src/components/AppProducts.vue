@@ -95,8 +95,10 @@
                 v-for="(magazine, i) in arrMagazines"
                 :urlImg="magazine.thumb"
                 :titolo="magazine.series"
-
             />
+
+            <button>CURRENT SERIES</button>
+
         </div>
     </div>
    
@@ -124,6 +126,19 @@
             padding-top: 5rem;
             flex-wrap: wrap;
             gap: 3rem;
+            position: relative;
+            button{
+                color: white;
+                padding-inline: 1.5rem;
+                padding-top: .75rem;
+                padding-bottom: .75rem;
+                background-color: #0282F9;
+                border: none;
+                font-size: 1.4rem;
+                position: absolute;
+                top: -1.5rem;
+                left: -1rem;
+            }
         }
 
             
